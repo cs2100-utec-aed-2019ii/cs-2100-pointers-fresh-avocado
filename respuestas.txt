@@ -1,0 +1,42 @@
+1) 1 2 3 4 5 6 7 8 9 10  
+2) 7 5 10
+3) T L T
+4) 4. (*p = 45)
+5) Da error. No se puede inicializar un puntero a doble con la dirección de una variable que contiene char.
+6) 
+void swap2(int* x, int* y) {
+   int temp = *x;
+   *x = *y;
+   *y = temp;
+}
+
+En main:
+
+int b = 5;
+int c = 10;
+swap2(&b, &c);
+std::cout << "b: " << b << " c: " << c << "\n";
+
+7) 2 8
+8) 0 8 
+9) 8 15
+10) 8
+11) 
+int a = 8;
+int* ptr = &a;
+std::cout << *ptr << " " << ptr << " " << &ptr;
+
+12) 13 13 39
+13) 5 10 7
+14) 4 1
+15) 
+
+int suma(int* x, int* y) {
+	return *x + *y;
+}
+
+16) 19
+17) 5
+18) 18
+19) Le anhade al string el caracter '\0' al final. Si le pasamos un string vacío, nos botará error porque el indice -1 no existe.
+20) Elimina las todas las comas del string.
